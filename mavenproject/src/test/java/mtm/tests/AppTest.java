@@ -1,4 +1,4 @@
-package mtm.mavenproject;
+package mtm.tests;
 
 import static org.junit.Assert.assertTrue;
 
