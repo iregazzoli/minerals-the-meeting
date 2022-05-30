@@ -1,0 +1,57 @@
+cards:
+ - id: 1
+   name: phosphophyllite
+   gem_cost: 1
+   gem_color: green
+   effect: cute_af
+   hardness: 3
+   atk: 1
+ - id: 2
+   name: diamond
+   gem_cost: 5
+   gem_color: white
+   effect: friendly 
+   hardness: 10
+   atk: 5
+ - id: 3
+   name: bort
+   gem_cost: 6
+   gem_color: black
+   effect: combater 
+   hardness: 10
+   atk: 7
+ - id: 4
+   name: amethyst
+   gem_cost: 4
+   gem_color: black
+   effect: twins 
+   hardness: 7
+   atk: 2
+ - id: 5
+   name: antarcticite 
+   gem_cost: 4
+   gem_color: white
+   effect: perfectionist 
+   hardness: 3
+   atk: 4
+ - id: 6
+   name: jade
+   gem_cost: 4
+   gem_color: green
+   effect: chairman 
+   hardness: 7
+   atk: 1
+ - id: 7
+   name: aquamarine
+   gem_cost: 4
+   gem_color: blue
+   effect: sea_water 
+   hardness: 8
+   atk: 4
+ - id: 8
+   name: lapis_lazuli
+   gem_cost: 2
+   gem_color: blue
+   effect: leader 
+   hardness: 5
+   atk: 3

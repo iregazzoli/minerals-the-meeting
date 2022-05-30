@@ -1,19 +1,28 @@
 package mtm.mavenproject;
 
 import java.io.FileNotFoundException;
+import java.io.IOException;
 import java.util.ArrayList;
 
 public class Game {
 	DeckBuilder deckBuilder = new DeckBuilder();
-	ArrayList<Card> Deck = new ArrayList<Card>();
+	
+	Player player1 = new Player(1);
+	Player player2 = new Player(2);
 	
 	public void loadDecks() {
 		try {
-			deckBuilder.getCards();
-		} 
-		catch (FileNotFoundException e) {
-			// TODO Auto-generated catch block, ask "Rome" if i Should do something here.
+			deckBuilder.loadCards(player1);
+			deckBuilder.loadCards(player2);
+		} catch (FileNotFoundException e) {
+			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 	}
+
+	public void playersCards() {
+		player1.printDeck();
+		player2.printDeck();
+	}
 }
+
