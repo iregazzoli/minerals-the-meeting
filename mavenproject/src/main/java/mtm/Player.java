@@ -1,4 +1,4 @@
-package mtm.mavenproject;
+package mtm;
 
 public class Player {
 	int hp;

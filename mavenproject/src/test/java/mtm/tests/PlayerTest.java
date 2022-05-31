@@ -5,25 +5,25 @@ import static org.junit.Assert.assertEquals;
 
 import org.junit.Test;
 
-import mtm.mavenproject.Player;
+import mtm.Player;
 
 public class PlayerTest 
 {
    
 	@Test
-	public void PlayerShouldStartWith20Hp() {
+	public void playerShouldStartWith20Hp() {
 		Player player = new Player(0);
 		assertEquals(player.getHp(), 20);	
   }
 	
 	@Test
-	public void PlayerHpShouldBe18IfTaking2Hp() {
+	public void playerHpShouldBe18IfTaking2Hp() {
 		Player player = new Player(0);
 		player.takeDmg(2);
 		assertEquals(player.getHp(), 18);	
   }
 	@Test
-	public void PlayerIdShouldBeTheNumberAssignToHim() {
+	public void playerIdShouldBeTheNumberAssignToHim() {
 		Player player = new Player(0);
 		assertEquals(player.getId(), 0);	
   }

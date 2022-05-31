@@ -1,4 +1,4 @@
-package mtm.mavenproject;
+package mtm;
 
 public class Mineral extends Card {
 	
@@ -19,11 +19,10 @@ public class Mineral extends Card {
 	}
 
 	@Override
-	public void Message() {
-		Print print = new Print();
-		print.out("Card, Name: " +  name + ", gemCosto: " + gemCost + ", gemColor: " + gemColor + " , ability: " + effect 
-															+ ", hardness: " + hardness + ", atk: "+ atk + ", type: Mineral");
-		
+	public String toString() {
+		return "Mineral [name: " + name + ", gemCost: " + gemCost + ", gemColor: " + gemColor + ", effect: " + effect
+						+ ", hardness: " + hardness + ", atk: " + atk + "]";
 	}
+	
 	
 }

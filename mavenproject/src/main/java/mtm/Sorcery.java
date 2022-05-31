@@ -1,4 +1,4 @@
-package mtm.mavenproject;
+package mtm;
 
 public class Sorcery extends Card{
 
@@ -13,9 +13,8 @@ public class Sorcery extends Card{
 	}
 
 	@Override
-	public void Message() {
-		Print print = new Print();
-		print.out("Card, Name: " +  name + ", gemCosto: " + gemCost + ", gemColor: " + gemColor + " , ability: " + effect + ", type: Sorcery");
+	public String toString() {	
+		return "Sorcery [name: " + name + ", gemCost: " + gemCost + ", gemColor: " + gemColor + ", effect: " + effect + "]";
 	}
 
 }

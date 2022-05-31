@@ -1,4 +1,4 @@
-package mtm.mavenproject;
+package mtm;
 
 public abstract class Card {
 	String name;
@@ -19,5 +19,5 @@ public abstract class Card {
 		this.effect = effect; 
 	}
 	
-	abstract public void Message();
+	abstract public String toString();
 }

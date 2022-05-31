@@ -1,4 +1,4 @@
-package mtm.mavenproject;
+package mtm;
 
 import java.util.ArrayList;
 
@@ -11,6 +11,6 @@ public class Deck {
 	
 	public void printCards() {
 		for(Card card : cards) 
-			card.Message();
+			System.out.println(card.toString());
 	}
 }

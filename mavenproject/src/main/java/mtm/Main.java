@@ -1,4 +1,4 @@
-package mtm.mavenproject;
+package mtm;
 
 import java.io.File;
 import java.io.FileInputStream;
@@ -13,8 +13,14 @@ import org.yaml.snakeyaml.constructor.Constructor;
 
 public class Main {
 	public static void main(String[] args) {
-	 Game game = new Game();
-   game.loadDecks();
-   game.playersCards();
-  }
+		Game game = new Game();
+
+		if (game.loadDecks())
+			game.playersCards();
+
+		else {
+			System.out.println("There was an error loading the decks, check if the path of the files containing the data are correct"
+													+ ", ending Programn.");
+		}
+	}
 }
