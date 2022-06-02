@@ -10,23 +10,17 @@ public class Game {
 	Player player1 = new Player(1);
 	Player player2 = new Player(2);
 	
-	public boolean loadDecks() {
+	public boolean loadDecks(String cardFile, String deckFile) {
+		boolean successLoading = true;
 		
-		boolean player1LoadDeckResult;
-		boolean player2LoadDeckResult;
+		try {
+			player1.setDeck(deckBuilder.loadCards(player1.idToString(), cardFile, deckFile));
+			player2.setDeck(deckBuilder.loadCards(player2.idToString(), cardFile, deckFile));
+		} catch (DeckNullException e) {
+			successLoading = false;
+			e.printStackTrace();
+		}
 		
-		player1LoadDeckResult = deckBuilder.loadCards(player1);
-		player2LoadDeckResult = deckBuilder.loadCards(player2);
-		
-		if(player1LoadDeckResult == false || player2LoadDeckResult == false)
-			return false;
-		
-		return true;
-	}
-
-	public void playersCards() {
-		player1.printDeck();
-		player2.printDeck();
+		return successLoading;	
 	}
 }
-

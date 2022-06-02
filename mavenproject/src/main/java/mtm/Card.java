@@ -10,6 +10,7 @@ public abstract class Card {
 		this.name = name;
 		this.gemCost = gemCost;
 		this.gemColor = gemColor; 
+		this.effect = "none";
 	}
 	
 	public Card(String name, int gemCost, String gemColor, String effect) {

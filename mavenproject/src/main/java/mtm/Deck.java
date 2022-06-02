@@ -8,9 +8,4 @@ public class Deck {
 	public void addCard(Card card) {
 			cards.add(card);
 	}
-	
-	public void printCards() {
-		for(Card card : cards) 
-			System.out.println(card.toString());
-	}
 }
