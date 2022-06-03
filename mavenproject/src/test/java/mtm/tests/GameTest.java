@@ -16,7 +16,7 @@ public class GameTest {
 		String decksPathFile = new File("resources/decks.yml").getAbsolutePath();
 		Game game = new Game();
 
-		assertEquals(game.loadDecks(cardsPathFile, decksPathFile), true);
+		assertTrue(game.loadDecks(cardsPathFile, decksPathFile));
 	}
 
 	@Test
