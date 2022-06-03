@@ -1,4 +1,4 @@
-package mtm.mavenproject;
+package mtm;
 
 public class Print {
 	public void out(String string) {

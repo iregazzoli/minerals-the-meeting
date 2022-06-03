@@ -1,0 +1,77 @@
+cards:
+ - id: 1
+   type: mineral
+   name: phosphophyllite
+   gem_cost: 1
+   gem_color: green
+   effect: cute_af
+   hardness: 3
+   atk: 1
+ - id: 2
+   type: mineral
+   name: diamond
+   gem_cost: 5
+   gem_color: white
+   effect: friendly 
+   hardness: 10
+   atk: 5
+ - id: 3
+   type: mineral
+   name: bort
+   gem_cost: 6
+   gem_color: black
+   effect: combater 
+   hardness: 10
+   atk: 7
+ - id: 4
+   type: mineral
+   name: amethyst
+   gem_cost: 4
+   gem_color: black
+   effect: twins 
+   hardness: 7
+   atk: 2
+ - id: 5
+   type: mineral
+   name: antarcticite 
+   gem_cost: 4
+   gem_color: white
+   effect: perfectionist 
+   hardness: 3
+   atk: 4
+ - id: 6
+   type: mineral
+   name: jade
+   gem_cost: 4
+   gem_color: green
+   effect: chairman 
+   hardness: 7
+   atk: 1
+ - id: 7
+   type: mineral
+   name: aquamarine
+   gem_cost: 4
+   gem_color: blue
+   effect: sea_water 
+   hardness: 8
+   atk: 4
+ - id: 8
+   type: mineral
+   name: lapis_lazuli
+   gem_cost: 2
+   gem_color: blue
+   effect: leader 
+   hardness: 5
+   atk: 3
+ - id: 9
+   type: sorcery
+   name: mercury_ball
+   gem_cost: 2
+   gem_color: red
+   effect: 3_dmg_to_opponent
+ - id: 10
+   type: sorcery
+   name: repair_kit
+   gem_cost: 2
+   gem_color: white
+   effect: heal_3_hp 

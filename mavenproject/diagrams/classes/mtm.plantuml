@@ -1,0 +1,10 @@
+@startuml
+
+Game --> Board
+Game --> "2" Player
+Game --> DeckBuilder
+Player --> Deck
+Deck --> "*" Card
+Card <|-- Mineral
+Card <|-- Sorcery
+@enduml
