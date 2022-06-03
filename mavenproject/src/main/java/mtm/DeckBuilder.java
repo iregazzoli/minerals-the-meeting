@@ -20,8 +20,7 @@ public class DeckBuilder {
 	private Map<String, Object> openFile(String path) throws FileNotFoundException {
 		InputStream file = new FileInputStream(new File(path));
 		Yaml yaml = new Yaml();
-		Map<String, Object> fileData = yaml.load(file);
-		return fileData;
+		return yaml.load(file);
 	}
 
 	private Deck setPlayerDecks(ArrayList<HashMap> cards, ArrayList<HashMap> player_cards) {
